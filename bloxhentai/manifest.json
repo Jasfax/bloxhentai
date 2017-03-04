@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Bloxhentai",
+  "description": "NYAHHHHHHH!",
+  "version": "0.69",
+  "content_scripts": [
+	{
+    "matches": ["https://www.bloxcity.com/forum/topic/*"],
+    "js": ["jquery.js", "hentai.js"],
+    "run_at": "document_end",
+    "all_frames": true
+	},
+	{
+    "matches": ["https://www.bloxcity.com/forum/thread/*"],
+    "js": ["jquery.js", "hentai2.js"],
+    "run_at": "document_end",
+    "all_frames": true
+	}
+	
+	
+	
+  ],
+
+
+  "permissions": ["https://www.bloxcity.com/*"]
+}
